@@ -18,6 +18,18 @@ export default (state,action) => {
                 ...state,
                 transactions: [ ...state.transactions,action.payload]
         }
+        case 'REGISTER_USER': return {
+                ...state,
+                user: action.payload
+        }
+        case 'LOGIN_USER': return {
+                ...state,
+                user: action.payload
+        }
+        case 'LOGOUT_USER': return {
+                ...state,
+                user: null
+        }
         default: return state;
     }
 }
