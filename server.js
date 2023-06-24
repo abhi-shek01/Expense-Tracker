@@ -18,6 +18,9 @@ if(process.env.NODE_ENV==='development')
 const PORT = process.env.PORT
 const transaction = require('./routes/transaction')
 app.use('/api/transaction', transaction)
+const user = require('./routes/user')
+app.use('/api/users', user)
+
 
 if(process.env.NODE_ENV==='production')
 {

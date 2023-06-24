@@ -78,7 +78,9 @@ label {
 }
 
 input[type='text'],
-input[type='number'] {
+input[type='number'],
+input[type='email'],
+input[type='password'] {
   border: 1px solid #dedede;
   border-radius: 2px;
   display: block;
@@ -129,7 +131,17 @@ input[type='number'] {
 .list li.minus {
   border-right: 5px solid #c0392b;
 }
-
+#logout{
+  width: 100px;
+  font-size: 8pt;
+  background-color: darkslateblue;
+  font-family: tahoma;
+  margin-top: 1px;
+  margin-right: 2px;
+  position:absolute;
+  top:0;
+  right:0;
+}
 .delete-btn {
   cursor: pointer;
   background-color: #e74c3c;
